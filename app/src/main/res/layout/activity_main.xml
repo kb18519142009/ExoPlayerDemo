@@ -6,10 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.example.exoplayerdemo.MainActivity">
 
-    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
-        android:id="@+id/simpleExoPlayerView"
+    <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+        android:id="@+id/player_area_layout"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:controller_layout_id="@layout/controller_exo_player" />
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:datumRatio="datumWidth"
+        app:heightRatio="9.0"
+        app:widthRatio="16.0">
 
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/simpleExoPlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:controller_layout_id="@layout/controller_exo_player" />
+    </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
 </FrameLayout>
