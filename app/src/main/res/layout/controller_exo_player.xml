@@ -18,23 +18,52 @@
         android:layout_centerInParent="true"
         android:src="@drawable/ic_pause" />
 
-    <com.example.exoplayerdemo.view.PlayerTimerBar
-    android:id="@+id/exo_progress"
-    android:layout_width="match_parent"
-    android:layout_height="26dp"
-    android:layout_alignParentBottom="true"
-    android:layout_gravity="center_vertical"
-    app:bar_height="1.5dp"
-    app:buffered_color="@color/player_buffered"
-    app:played_color="@color/player_played"
-    app:scrubber_color="@color/player_scrubber"
-    app:scrubber_enabled_size="12dp"
-    app:unplayed_color="@color/player_un_buffered" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/white" />
+
+        <com.example.exoplayerdemo.view.PlayerTimerBar
+            android:id="@+id/exo_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/exo_position"
+            android:layout_toStartOf="@+id/exo_duration"
+            app:bar_height="1.5dp"
+            app:buffered_color="@color/player_buffered"
+            app:played_color="@color/player_played"
+            app:scrubber_color="@color/player_scrubber"
+            app:scrubber_enabled_size="12dp"
+            app:unplayed_color="@color/player_un_buffered" />
+
+    </RelativeLayout>
 
     <!--<com.example.exoplayerdemo.view.CompoundTimeBar-->
-        <!--android:id="@id/exo_progress"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="20dp"-->
-        <!--android:layout_alignParentBottom="true" />-->
+    <!--android:id="@id/exo_progress"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_alignParentBottom="true" />-->
 
 </RelativeLayout>
