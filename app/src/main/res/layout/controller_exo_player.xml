@@ -18,24 +18,23 @@
         android:layout_centerInParent="true"
         android:src="@drawable/ic_pause" />
 
-    <!--<com.example.exoplayerdemo.view.PlayerTimerBar-->
-    <!--android:id="@+id/exo_progress_control"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="26dp"-->
-    <!--android:layout_alignParentBottom="true"-->
-    <!--android:layout_gravity="center_vertical"-->
-    <!--android:layout_weight="1"-->
-    <!--app:bar_height="1.5dp"-->
-    <!--app:buffered_color="@color/player_buffered"-->
-    <!--app:played_color="@color/player_played"-->
-    <!--app:scrubber_color="@color/player_scrubber"-->
-    <!--app:scrubber_enabled_size="12dp"-->
-    <!--app:unplayed_color="@color/player_un_buffered" />-->
+    <com.example.exoplayerdemo.view.PlayerTimerBar
+    android:id="@+id/exo_progress"
+    android:layout_width="match_parent"
+    android:layout_height="26dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center_vertical"
+    app:bar_height="1.5dp"
+    app:buffered_color="@color/player_buffered"
+    app:played_color="@color/player_played"
+    app:scrubber_color="@color/player_scrubber"
+    app:scrubber_enabled_size="12dp"
+    app:unplayed_color="@color/player_un_buffered" />
 
-    <com.example.exoplayerdemo.view.CompoundTimeBar
-        android:id="@id/exo_progress"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_alignParentBottom="true" />
+    <!--<com.example.exoplayerdemo.view.CompoundTimeBar-->
+        <!--android:id="@id/exo_progress"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_alignParentBottom="true" />-->
 
 </RelativeLayout>
