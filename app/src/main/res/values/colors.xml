@@ -3,4 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="main_color">#ffda44</color>
+
+    <color name="player_played">@color/main_color</color>
+    <color name="player_buffered">#93918d</color>
+    <color name="player_scrubber">@color/white</color>
+    <color name="player_un_buffered">#57595959</color>
 </resources>
