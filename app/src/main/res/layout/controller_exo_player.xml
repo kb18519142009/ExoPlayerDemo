@@ -4,6 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/img_bg_gradient_bottom" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/img_bg_gradient_top" />
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="武林外传"
+        android:layout_margin="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
     <ImageView
         android:id="@+id/exo_play"
         android:layout_width="30dp"
@@ -59,11 +80,5 @@
             app:unplayed_color="@color/player_un_buffered" />
 
     </RelativeLayout>
-
-    <!--<com.example.exoplayerdemo.view.CompoundTimeBar-->
-    <!--android:id="@id/exo_progress"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="20dp"-->
-    <!--android:layout_alignParentBottom="true" />-->
 
 </RelativeLayout>
