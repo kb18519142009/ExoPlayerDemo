@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         if (mPlayer != null && mPlayer.getCurrentPosition() > 0) {
-            mPlayer.setPlayWhenReady(true);
+            mPlayer.setPlayWhenReady(true); //播放
         }
     }
 
@@ -181,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onRepeatModeChanged(int repeatMode) {
-
         }
 
         @Override
@@ -196,7 +195,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onPlaybackParametersChanged(PlaybackParameters playbackParameters) {
-
         }
     };
 
