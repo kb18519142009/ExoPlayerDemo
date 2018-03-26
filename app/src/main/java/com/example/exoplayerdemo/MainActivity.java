@@ -159,7 +159,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onLoadingChanged(boolean isLoading) {
-
         }
 
         @Override
