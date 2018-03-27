@@ -110,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
         mPlayer.prepare(createMediaSource(PLAY_VIDEO_URL));
         simpleExoPlayerView.setPlayer(mPlayer);
         mPlayer.setPlayWhenReady(true);
-
     }
 
     private SimpleExoPlayer createNewPlayer(Context context) {
@@ -141,7 +140,6 @@ public class MainActivity extends AppCompatActivity {
             ma[i++] = new ExtractorMediaSource(Uri.parse(url),
                     mMediaDataSourceFactory, mExtractorsFactory, null, null);
         }
-
         return new ConcatenatingMediaSource(ma);
     }
 
